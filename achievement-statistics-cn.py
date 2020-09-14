@@ -3,7 +3,7 @@ import csv
 import os
 
 file_path = 'a.html'
-result_path = 'statistics.csv'
+result_path = '成就统计.csv'
 
 
 def main():
@@ -55,10 +55,10 @@ def process(html):
         unlock_time_tag = achievement.find(attrs={'class': 'achieveUnlockTime'})
         if unlock_time_tag is not None:
             unlock_time = unlock_time_tag.get_text().replace('<br>', '').strip()
-            item.append('Y')
+            item.append('是')
             item.append(unlock_time)
         else:
-            item.append('N')
+            item.append('否')
             item.append(' ')
         # achievement process
         process_tag = achievement.find(attrs={'class': 'progressText nextToBar ellipsis'})
