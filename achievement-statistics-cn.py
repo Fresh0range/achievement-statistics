@@ -30,9 +30,9 @@ def read():
 def write(achievement_list):
     if os.path.exists(result_path):
         os.remove(result_path)
-    with open(result_path, 'a', encoding='utf8', newline='') as f:
+    with open(result_path, 'a', encoding='gb18030', newline='') as f:
         writer = csv.writer(f)
-        writer.writerow(['name', 'detail', 'unlock/lock ', 'unlock_time', 'process'])
+        writer.writerow(['成就名', '成就详情', '是否解锁', '解锁时间', '进度'])
         for item in achievement_list:
             writer.writerow(item)
         f.close()

@@ -11,7 +11,7 @@ Steam Achievement Statistics
 * Browse achievement page of any game,right click in the page and select `View page source code`.
 * Copy the source code and save as `a.html`.
 * Move `a.html` to the same directory as `achievement-statistics.py`.
-* Double click `achievement-statistics.py` and then you can see the result named `statistics.csv`.
+* Double click `achievement-statistics.py` (Chinese click `achievement-statistics-cn.py`)and then you can see the result named `statistics.csv`.
 
 ## Why do i do this
 Recently, I was playing a game called payday2, which required 1000 achievements to unlock the weapon skin. 
